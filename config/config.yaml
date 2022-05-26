@@ -1,0 +1,5 @@
+PrivateKey: 1E99423A4ED27608A15A2616A2B0E9E52CED330AC530EDCC32C8FFC6A526AEDD
+# Initial peer seed list.
+SeedList:
+  - PublicKey: 02c490e4252bc7608fd55ddd9d7ca4a488ad152f3da6a6c2e9061f4c7e59f5b7f8 # Root Peer
+    Address: ["127.0.0.1:9001"]
