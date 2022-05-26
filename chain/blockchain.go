@@ -4,7 +4,6 @@ import (
 	"blockchain/store"
 	"encoding/binary"
 	"errors"
-	"flag"
 	"fmt"
 	"log"
 	"sync"
@@ -49,9 +48,7 @@ type Blockchain struct {
 
 // BootStrap initializes the blockchain. It creates the blockchain database file if it does not exist already.
 func BootStrap() (blockchain *Blockchain, err error) {
-	var dbPath string
-	flag.StringVar(&dbPath, "db", "/tmp/blockchain/db", "--db dbPath/to/db/file")
-	flag.Parse()
+	var dbPath = "/tmp/blockchain/db"
 	blockchain = &Blockchain{path: dbPath}
 
 	// open existing blockchain file or create new one
